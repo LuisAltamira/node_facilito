@@ -1,0 +1,14 @@
+extends ./layout.jade
+block contenido
+    .container
+        .row
+            .col-xs-12.col-md-4.col-md-push-4
+                form(action="/users" method="POST")
+                    .form-group
+                        label(for="id_email")
+                        input(type="text" id="id_email" name="email" class="form-control")
+                    .form-group
+                        label(for="id_password")
+                        input(type="password" id="id_password" name="password" class="form-control")
+                    .form-group.text-center
+                        input(type="submit" value="Iniciar Sesión" class="btn btn-info")
